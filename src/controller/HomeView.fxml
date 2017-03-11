@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginViewController">
+   <children>
+      <TableView fx:id="table" layoutX="16.0" layoutY="49.0" prefHeight="637.0" prefWidth="1200.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
+        <columns>
+          <TableColumn fx:id="id" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="ID Prodotto" />
+          <TableColumn fx:id="cod" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Codice Prodotto" />
+            <TableColumn fx:id="desc" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Descrizione Prodotto" />
+            <TableColumn fx:id="cat" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Categoria" />
+            <TableColumn fx:id="quant" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Quantità" />
+            <TableColumn fx:id="prezzoAcq" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Prezzo di Acquisto" />
+            <TableColumn fx:id="prezzoVend" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Prezzo di Vendita" />
+            <TableColumn fx:id="lastDate" maxWidth="-1.0" minWidth="150.0" prefWidth="0.0" text="Data Ultimo Inventario" />
+        </columns>
+      </TableView>
+      <MenuBar fx:id="menuBar" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="208.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Prodotti">
+              <items>
+                <MenuItem fx:id="addProd" mnemonicParsing="false" text="Aggiungi Prodotti" />
+                  <MenuItem fx:id="editProd" mnemonicParsing="false" text="Modifica Elemento" />
+                  <MenuItem fx:id="datInv" mnemonicParsing="false" text="Dati Inventario" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

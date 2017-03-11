@@ -15,7 +15,7 @@ import service.interfaces.LoginServiceInterface;
 public class LoginViewController {
 
     private LoginServiceInterface loginServiceInterface;
-    private ViewDispatcher viewDispatcher = ViewDispatcher.dispatcher;
+    private ViewDispatcher viewDispatcher = ViewDispatcher.dispatcher();
 
     @FXML
     private TextField username;
@@ -36,7 +36,6 @@ public class LoginViewController {
             }
         } else {
             viewDispatcher.alert(alertEnums.LOGINERROR_MISSING);
-            username.clear();
             password.clear();
         }
     }

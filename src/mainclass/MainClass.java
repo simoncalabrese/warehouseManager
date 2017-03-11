@@ -28,7 +28,7 @@ public class MainClass extends Application {
         MainClass.primaryStage = primaryStage;
         MainClass.primaryStage.setTitle("App");
         initRootLayout();
-        ViewDispatcher.dispatcher.dispatch(fxmlPathNames.LOGIN.getPath());
+        ViewDispatcher.dispatcher().dispatch(fxmlPathNames.LOGIN.getPath());
     }
 
     private void initRootLayout() {

@@ -15,7 +15,14 @@ import java.util.Optional;
  * Created by simon on 01/03/17.
  */
 public class ViewDispatcher {
-    public static ViewDispatcher dispatcher = new ViewDispatcher();
+    private static ViewDispatcher instance;
+
+    public static ViewDispatcher dispatcher(){
+        if(instance == null) {
+            instance = new ViewDispatcher();
+        }
+        return instance;
+    }
 
     public void dispatch(String view) {
         try {
