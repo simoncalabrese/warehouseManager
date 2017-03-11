@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="warehouseManager">
+    <output-path>$PROJECT_DIR$/out/artifacts/warehouseManager</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="mainclass.MainClass" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="App" />
+        <option name="vendor" value="Simon" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="warehouseManager.jar">
+        <element id="module-output" name="warehouseManager" />
+      </element>
+    </root>
+  </artifact>
+</component>
