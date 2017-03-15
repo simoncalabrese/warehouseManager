@@ -5,35 +5,36 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import service.dto.TableProductsDTO;
 
 public class HomeViewController {
 
     @FXML
-    private TableView<?> table;
+    private TableView<TableProductsDTO> table;
 
     @FXML
-    private TableColumn<?, ?> id;
+    private TableColumn<TableProductsDTO, Integer> id;
 
     @FXML
-    private TableColumn<?, ?> cod;
+    private TableColumn<TableProductsDTO, String> cod;
 
     @FXML
-    private TableColumn<?, ?> desc;
+    private TableColumn<TableProductsDTO, String> desc;
 
     @FXML
-    private TableColumn<?, ?> cat;
+    private TableColumn<TableProductsDTO, String> cat;
 
     @FXML
-    private TableColumn<?, ?> quant;
+    private TableColumn<TableProductsDTO, Long> quant;
 
     @FXML
-    private TableColumn<?, ?> prezzoAcq;
+    private TableColumn<TableProductsDTO, Double> prezzoAcq;
 
     @FXML
-    private TableColumn<?, ?> prezzoVend;
+    private TableColumn<TableProductsDTO, Double> prezzoVend;
 
     @FXML
-    private TableColumn<?, ?> lastDate;
+    private TableColumn<TableProductsDTO, Double> lastDate;
 
     @FXML
     private MenuBar menuBar;

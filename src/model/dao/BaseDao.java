@@ -42,4 +42,6 @@ public class BaseDao {
         return Optional.ofNullable(entityManager.createQuery(query).getSingleResult());
     }
 
+
+
 }
